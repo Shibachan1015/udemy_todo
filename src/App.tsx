@@ -16,7 +16,7 @@ const App: React.FC = () => {
     return () => unSub(); //クリーンナップ関数　ページのリフレッシュなどによりアンマウントされたあとDomを解放してあげる関数
   }, []);
 
-  const newTask = (e: React.MouseEventHandler<HTMLButtonElement>)=>{
+  const newTask = (e: React.MouseEvent<HTMLButtonElement>)=>{
     db.collection("tasks").add({ title: input });
     setInput("");
   };
