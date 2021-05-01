@@ -29,3 +29,7 @@ button:disabled {
 h1 {
   display: inline-block;
 }
+
+h2 {
+  white-space: pre-wrap;
+}
